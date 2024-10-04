@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .list-item-li {
+        @apply overflow-hidden relative cursor-pointer hover:rotate-3 hover:ring-2 hover:ring-offset-4  transition-all rounded
+
+        
+    }
+
+    .list-item-li.add {
+        @apply hover:ring-secondary hover:ring-offset-primary
+    }
+
+    .list-item-li.remove {
+        @apply hover:ring-primary hover:ring-offset-secondary
+    }
+}
